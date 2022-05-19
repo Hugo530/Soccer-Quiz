@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soccer Quiz</title>
+    <link rel="normalize" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="./Assets/CSS/style.css" />
+</head>
+
+<body>
+    <header>
+        <p id="viewscore">View High Scores</p>
+        <p id="viewtimer"></p>
+    </header>
+
+    <main class="column">
+        <section id="Quiz-Area">
+
+          
+            <div id="quiz-intro" data-state="shown">
+                <h1 id="quiz-name">
+                    Soccer Quiz
+                </h1>
+                <p class="center-text">Welcome to the Soccer Trivia Quiz. You think you know your soccer knowledge click on the start quiz button to test you knowledge good luck!</p>
+                    <br>
+                <button id="start-button">Start Quiz</button>
+            </div>
+            
+            <div id="quiz-question" class="hidden" data-state="hidden">
+                <h2 id="question-text">
+                </h2>
+                <br><br>
+                <ul id="quiz-answers">
+                </ul>
+            </div>
+            
+            <div id="enter-score" class="hidden" data-state="hidden">
+                <h2>
+                    All done!
+                </h2>
+                <br><br>
+                <p id="your-final-score"></p>
+                <br><br>
+                <form id="enter-score-form"><p>Enter initials: <input type="text" id="initials"></input><button id="submit">Submit</button></p></form>
+            </div>
+            
+            <div id="score-display" class="hidden" data-state="hidden">
+                <h2>High Scores</h2>
+                <br><br>
+                <ol id="score-list" class="high-scores">
+                </ol>
+                <br>
+                <span><button id="play-again">Play Again</button><button id="clear-scores-button">Clear High Scores</button></span>
+            </div>
+        </section>
+        <br><br>
+       
+        <div id="right-wrong" class="hidden" data-state="hidden">
+            <p id="Correct" class="hidden">Correct</p>
+            <p id="Incorrect" class="hidden">Wrong</p>
+        </div>
+    </main>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
