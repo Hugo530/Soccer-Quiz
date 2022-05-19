@@ -8,6 +8,7 @@ body {
     width:100%;
     flex-wrap: wrap;
     margin:0;
+    background: linear-gradient(to right, #a8ff78, #78ffd6);
   }
   
   /* Header. Used for View HighScore and View Timer */
@@ -92,7 +93,7 @@ input{
 button {
 
     cursor: pointer;
-    background-color: #7e1078;
+    background: linear-gradient(to right, #1e9600, #fff200, #ff0000);
     color: white;
     margin-right:2em;
     font-size: 1em;
